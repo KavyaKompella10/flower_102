@@ -49,4 +49,4 @@ In this project, we took the following steps:
 
 ## References
 
-1. "https://github.com/lukysummer/Transfer-Learning-with-ResNet50/blob/main/Transfer_Learning_ResNet50_Part1.ipynb"
+1. https://github.com/lukysummer/Transfer-Learning-with-ResNet50/blob/main/Transfer_Learning_ResNet50_Part1.ipynb
