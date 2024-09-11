@@ -8,12 +8,17 @@ This project leverages **ResNet50**, a pre-trained deep learning model, to class
 
 ### Dataset
 
-The dataset consists of images of 102 flower species. It is divided into two parts:
+The dataset consists of images of 102 flower species. 
 
-- **Training Data**: Located in the `trnid.csv` file, containing the IDs of images used for training.
-- **Labels**: Located in the `labels.csv` file, which maps each image ID to a corresponding label. The image files are stored in the `jpg` folder, where each image is named in the format `image_00001.jpg`.
+download data from: https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
 
-Additionally, we have a **validation dataset** with a similar structure to evaluate model performance.
+The dataset includes:
+
+- Training file (trnid.mat): Contains the image IDs used for training the model.
+- Validation file (valid.mat): Contains the image IDs used for validating the model's performance.
+- Test file (tstid.mat): Contains the image IDs used for testing the model after training.
+- Labels file (imagelabels.mat): Links each image to a specific flower species (1-102).
+- Images: The flower images are provided in .jpg format, with file names like image_XXXX.jpg.
 
 ### Model: ResNet50
 
@@ -26,26 +31,6 @@ In this project, we took the following steps:
 3. **Customizing Output Layer**: The final fully connected layer was modified to fit the flower classification task, adjusting the output to 102 classes.
 4. **Training**: The model was fine-tuned using the flower dataset to optimize its performance for the specific task.
 
-## Repository Structure
-
-### Files
-
-- **`trnid.csv`**: Contains the image IDs used for training.
-- **`labels.csv`**: Contains the labels for each image ID, corresponding to one of the 102 flower categories.
-- **`jpg/`**: This folder contains the images in `.jpg` format, each named `image_XXXXX.jpg`.
-- **`valid_data/`**: Contains the validation dataset, similar in structure to the training data.
-
-### Notebooks
-
-- **`file_directory.ipynb`**: Organizes and processes the image files, ensuring proper format for training and validation.
-- **`mat2csv.ipynb`**: Converts data from `.mat` to `.csv` format for easier integration into the training pipeline.
-- **`model.ipynb`**: Contains the core code for building, training, and evaluating the ResNet50 model for flower classification.
-
-## Process
-
-1. **Data Preprocessing**: Images are loaded and resized to match the input size required by ResNet50 (224x224 pixels).
-2. **Model Fine-tuning**: The pre-trained ResNet50 is fine-tuned with new layers for flower classification, training the model on the dataset.
-3. **Evaluation**: The model is evaluated on the validation dataset to assess accuracy in classifying different flower species.
 
 ## Requirements
 
