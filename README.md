@@ -60,7 +60,7 @@ In this project, we took the following steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/flower-classification.git
+   git clone https://github.com/kavya10/flower_102.git
 
 ## References
 
