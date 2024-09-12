@@ -34,12 +34,14 @@ In this project, we took the following steps:
 
 ## Requirements
 
-- Python 3.x
-- PyTorch
-- torchvision
+- scipy
 - pandas
-- numpy
+- torch
+- torchvision
+- Pillow
 - matplotlib
+- scikit-learn
+- seaborn
 
 ## Instructions for Running
 
